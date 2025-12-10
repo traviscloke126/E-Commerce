@@ -133,11 +133,12 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
+    
 }
 
 .highlight {
     padding: 0 24px;
-    width: calc(100% / 33);
+    width: calc(100% / 3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +147,7 @@ button:active {
 
 .highlight__para {
     text-align: center;
-    max-width: 240px;
+    max-width: 280px;
 }
 
 .highlight__img {
