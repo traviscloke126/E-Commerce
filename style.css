@@ -19,9 +19,6 @@ nav {
     height: 80px;
     display: flex;
 }
-img {
-    100%
-}
 
 p {
     line-height: 1.5;
@@ -88,6 +85,7 @@ li {
     text-align: center;
     border: none;
     color: #7342d6;
+    display: none;
 }
 
 .menu__links {
@@ -115,8 +113,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
 .btn__menu--close {
     position: absolute;
     right: 20px;
@@ -125,6 +135,9 @@ li {
     color: white;
  }
 
+ .book__img {
+    max-width: 100%;
+ }
 
 /* 
 
@@ -379,5 +392,13 @@ footer {
 
 
 
-/*  FOOTER */
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+}
 
