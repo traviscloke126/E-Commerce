@@ -20,6 +20,10 @@ nav {
     display: flex;
 }
 
+img {
+  max-width: 100%; 
+  height: auto;    
+}
 p {
     line-height: 1.5;
 }
@@ -178,6 +182,7 @@ h1 {
 h2 {
     font-size: 32px;
     color: #000000;
+    margin-top: 40px;
     margin-bottom: 32px;
     text-align: center;
 }
@@ -199,6 +204,7 @@ button:active {
 }
 
 .header__img--wrapper {
+    max-width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -425,10 +431,11 @@ footer {
   .btn__menu {
     display: block;
     }
-
-.highlight{
-    width: 100%;
-    margin-bottom:  24px;
+}
+@media (max-width: 780px) {
+    .highlight{
+        width: 100%;
+        margin-bottom:  24px;
 }
 .highlight:not(:last-child) {
      margin-bottom: 24px;
