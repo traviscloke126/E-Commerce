@@ -29,7 +29,6 @@ setTimeout(() => {
 });
 
 
-
 //FAKE DATA
 function getBooks() {
     return {
