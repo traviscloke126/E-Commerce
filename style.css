@@ -206,6 +206,8 @@ button:active {
 
 .header__img--wrapper {
     max-width: 100%;
+    height: auto;
+    width: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
